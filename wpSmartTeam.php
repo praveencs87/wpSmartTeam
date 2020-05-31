@@ -29,3 +29,6 @@
  //blocks
  require_once('blocks/teams.php');
 
+
+ //shortcode
+ require_once('shortcodes/teams.php');
