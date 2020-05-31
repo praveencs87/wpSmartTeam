@@ -29,8 +29,13 @@ padding: 10px;
     list-style: none;
     
 }
+.teamaside ul{
+    margin: 0;
+    padding: 0;
+}
 .teamaside li a{
     color: #fff;
+    text-decoration: none;
 }
 .teamsinglemain{
     width: 75%;
@@ -47,6 +52,10 @@ padding: 10px;
 .post-inner{
 margin: 0px !important;
 padding: 0!important;
+}
+.singleteamconatiner {
+    padding: 20px;
+    display: inline-block;
 }
 @media (max-width: 600px) {
     .teamaside, .teamsinglemain, .imagewrap, .contentwrap{

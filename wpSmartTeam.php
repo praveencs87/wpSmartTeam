@@ -26,3 +26,6 @@
  //filters
  require_once('filters/teams.php');
 
+ //blocks
+ require_once('blocks/teams.php');
+

@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-
+<div class="singleteamconatiner">
 <main id="site-content" class="teamsinglemain" role="main">
 
     <?php
@@ -28,6 +28,7 @@ get_header();
                         the_title();
                         ?>
                     </h3>
+                    <hr>
                             <?php
                             if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
                                 the_excerpt();
@@ -172,7 +173,7 @@ get_header();
     }
 
     ?>
-    </div>
+   
 </main><!-- #site-content -->
 
 <aside class="teamaside">
@@ -204,5 +205,6 @@ get_header();
         ?>
     </ul>
 </aside>
+    </div>
 
 <?php get_footer(); ?>
