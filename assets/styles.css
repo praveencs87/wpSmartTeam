@@ -1,0 +1,56 @@
+.teams.type-teams {
+
+padding: 10px;
+
+
+}
+.teamlisting a{
+    
+    flex: 0 0 33.333333%;
+}
+.teams.type-teams img {
+    width: 100%;
+}
+.teamlisting {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamaside {
+    width: 20%;
+    float: right;
+}
+.teamaside li{
+    padding:5px 10px;
+    background-color: cadetblue;
+    margin-top: 2px;
+    list-style: none;
+    
+}
+.teamaside li a{
+    color: #fff;
+}
+.teamsinglemain{
+    width: 75%;
+    float: left;
+}
+.imagewrap {
+    width:30%;
+    float: left;
+}
+.contentwrap {
+    width:70%;
+    float: right;
+}
+.post-inner{
+margin: 0px !important;
+padding: 0!important;
+}
+@media (max-width: 600px) {
+    .teamaside, .teamsinglemain, .imagewrap, .contentwrap{
+        width: 100%;
+        float: none;
+    }
+}

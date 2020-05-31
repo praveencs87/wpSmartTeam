@@ -22,3 +22,7 @@
 
  //include meta box
  require_once('meta-box/teams.php');
+
+ //filters
+ require_once('filters/teams.php');
+
