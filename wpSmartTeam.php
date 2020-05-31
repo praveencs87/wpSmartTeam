@@ -19,3 +19,6 @@
  require_once('taxonomies/team-category.php');
  require_once('taxonomies/team-designation.php');
  require_once('taxonomies/team-location.php');
+
+ //include meta box
+ require_once('meta-box/teams.php');
