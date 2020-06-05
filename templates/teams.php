@@ -1,51 +1,49 @@
 <?php
 get_header();
 ?>
-<h1 style="text-align: center;">Teams</h1>
-<main id="site-content" class="teamlisting" role="main">
 
-    <?php
+<div class="team-section">
+<div class="container">
 
-    if (have_posts()) {
+<h6><span>Get to know us<small></small></span></h6>
+<h1>Teams</h1>
 
-        while (have_posts()) {
-            the_post();
-    
-          $custom = get_post_custom(get_the_ID());
-          $border = (isset($custom["primary_color"][0])) ? $custom["primary_color"][0] : '#ffffff';
-          if( $border=="")  $border="#fff"
-    ?>
-    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="border: 5px solid <?php echo $border;?>">
-            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<?php
 
-                <?php
-        
-                the_post_thumbnail();
-                the_title();
-                ?>
+if (have_posts()) {
 
+    while (have_posts()) {
+        the_post();
+
+      $custom = get_post_custom(get_the_ID());
+      $border = (isset($custom["primary_color"][0])) ? $custom["primary_color"][0] : '#ffffff';
+      if( $border=="")  $border="#fff"
+?>
+<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+<section class="team-card">
+<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 
-                <?php
-
-                if ((is_single())) {
-                ?>
-
-
-
-                <?php
-                }
-                ?>
-
-            </article><!-- .post -->
-    </a>
-    <?php
+<div style="background-color: <?php echo $border;?>;width: 90%;height: 90%;position: absolute;right: 0;top: 0;"></div>
+<?php the_post_thumbnail(); ?>
+<h4><?php
+the_title();
+?>
+</h4>
+</article>
+</section>
+</a>
+<?php
         }
     }
 
     ?>
+<div class="clear"></div>
 
-</main><!-- #site-content -->
+</div>
+</div>
+<!--team-section_END-->
+
 
 
 <?php get_footer(); ?>

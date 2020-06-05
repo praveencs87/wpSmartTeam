@@ -31,4 +31,5 @@
 
 
  //shortcode
+ 
  require_once('shortcodes/teams.php');

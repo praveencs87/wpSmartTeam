@@ -63,3 +63,246 @@ padding: 0!important;
         float: none;
     }
 }
+
+
+.container {
+	margin: 20px auto !important;
+	max-width: 1200px!important;
+}
+.team-card {
+	width: 33.333%!important;
+	padding:0 10px!important;
+	float:left!important;
+	margin: 40px 0 0!important;
+}
+.team-card article {
+    position: relative!important;
+	padding: 55px 0 0!important;
+}
+/*.team-card article:before {
+    background-color: #51aab2;
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}*/
+.team-details-section a {
+    text-decoration: none !important;
+    
+}
+.team-card article img {
+    position: relative!important;
+    width: 85%!important;
+    box-shadow: 20px -20px 20px rgba(0, 0, 0, 0.2)!important;
+}
+.team-card article h4 {
+    position: absolute!important;
+    top: 60px!important;
+    right: -11px!important;
+    margin: 0!important;
+    color: #fff!important;
+    transform: rotate(90deg)!important;
+    font-size: 17px!important;
+}
+.clear {
+	clear: both!important;
+}
+.team-section h1 {
+    text-align: center!important;
+    margin: 20px 0 0!important;
+    font-size: 40px!important;
+}
+.team-section h6 {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #51aab2;
+    position: relative;
+}
+.team-section h6 span {
+	position:relative;
+	display:inline-block;
+	padding: 0 45px;
+}
+.team-section h6 span:before {
+    width: 35px;
+    height: 2px;
+    background-color: #51aab2;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.team-section h6 span:after {
+    width: 20px;
+    height: 2px;
+    background-color: #51aab2;
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+.team-section h6 small:before {
+    width: 35px;
+    height: 2px;
+    background-color: #51aab2;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.team-section h6 small:after {
+    width: 20px;
+    height: 2px;
+    background-color: #51aab2;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+
+.team-members li a {
+    text-decoration: none;
+    color: #fff;;
+}
+
+
+.team-details-section {
+    margin: 40px 0;
+}
+.team-details-pic {
+	width: 33.3333%;
+	padding:0 10px;
+	float:left;
+	margin:0;
+}
+.team-details-pic article {
+    position: relative;
+	padding: 55px 0 0;
+}
+.team-details-pic article img {
+    position: relative;
+    width: 85%;
+    box-shadow: 20px -20px 20px rgba(0, 0, 0, 0.2);
+	float:right;
+}
+.team-details {
+    width: 41.666667%;
+    float: left;
+    padding: 0 15px;
+}
+.team-details h1 {
+    text-align: left;
+    margin: 20px 0 0;
+    font-size: 28px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #000;
+}
+.team-details p {
+    line-height: 22px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+.team-details h1 span {
+    display: block;
+    font-size: 18px;
+}
+.team-details h6 {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #51aab2;
+    position: relative;
+}
+.team-details h6 span {
+	position:relative;
+	display:inline-block;
+	padding: 0 45px 0 0;
+}
+.team-details h6 small:before {
+    width: 35px;
+    height: 2px;
+    background-color: #51aab2;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.team-details h6 small:after {
+    width: 20px;
+    height: 2px;
+    background-color: #51aab2;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+.team-members {
+    width: 25%;
+    float: left;
+}
+.team-members ul {
+	padding:0;
+	list-style:none;
+}
+.team-members li {
+    background-color: #51aab2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 0 3px;
+}
+@media (min-width:250px) and (max-width: 870px) {
+.team-card article h4 {
+    right: -33px;
+    font-size: 15px;
+}	
+}
+
+@media (min-width:250px) and (max-width: 730px) {
+.team-card {
+    width: 50%;
+}	
+}
+
+@media (min-width:250px) and (max-width: 530px) {
+.team-section h1 {
+    margin: 10px 0 0;
+    font-size: 26px;
+}	
+}
+
+@media (min-width:250px) and (max-width: 450px) {
+.team-card {
+    width: 100%;
+}	
+}
+
+@media (min-width:250px) and (max-width: 680px) {
+.team-details-pic {
+    width: 100%;
+    float: none;
+	margin: 0 0 20px;
+}	
+.team-details {
+    width: 65%;
+}
+.team-members {
+    width: 35%;
+}
+}
+@media (min-width:250px) and (max-width: 470px) {
+.team-details {
+    width: 100%;
+	float:none;
+}
+.team-members {
+    width: 100%;
+	float:none;
+}	
+}
